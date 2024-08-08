@@ -5,14 +5,17 @@ ruby '>= 3.1', '< 3.4'
 gem 'rails', '~> 7.1.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.5.6'
-# Use SCSS for stylesheets
-gem 'sass-rails'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier'
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails'
+# Use Sass to process CSS
+gem "dartsass-rails", "~> 0.4.1"
+# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+gem "sprockets-rails"
+# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+gem "stimulus-rails"
+# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+gem "turbo-rails"
+# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
+gem "importmap-rails"
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
 gem 'bootsnap', require: false
 gem 'listen'
 

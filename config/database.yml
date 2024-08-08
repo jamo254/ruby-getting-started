@@ -23,7 +23,9 @@ default: &default
 
 development:
   <<: *default
-  database: ruby-getting-started_development
+  url: postgres://<%= ENV["DATABASE_URL"] %>/<%= ENV["DATABASE_NAME"] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
